@@ -73,8 +73,13 @@ body {
 }
 
 @keyframes drift {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(30px, 50px) scale(1.1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(30px, 50px) scale(1.1);
+    }
 }
 
 /* Glass Container */
@@ -202,6 +207,14 @@ ul {
     gap: 0.3rem;
 }
 
+.task-flair {
+    font-size: 0.9rem;
+    color: var(--secondary-accent);
+    font-style: italic;
+    margin-top: 0.25rem;
+    opacity: 0.9;
+}
+
 .task-actions {
     margin-left: 1rem;
 }
@@ -209,7 +222,8 @@ ul {
 .delete-btn {
     background: transparent;
     border: 1px solid var(--glass-border);
-    color: #ef4444; /* red */
+    color: #ef4444;
+    /* red */
     min-width: unset;
     padding: 0.5rem;
     border-radius: 8px;
@@ -223,15 +237,22 @@ ul {
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Loading Spinner */
 .loading-spinner {
     width: 20px;
     height: 20px;
-    border: 3px solid rgba(255,255,255,0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     border-top-color: white;
     animation: spin 1s ease-in-out infinite;
@@ -242,5 +263,7 @@ ul {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
